@@ -1,0 +1,442 @@
+/* Selectores GENERALES */
+
+html{
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+    padding-bottom: 12px;
+    position: sticky;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    font-size: 12px;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 24px;
+}
+
+button {
+    background-color: #1259c3 ;
+    color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 16px;
+    border: none;
+    transition: background-color, 1s;
+}
+
+button:hover {
+    background-color:#0022AA ;
+}
+footer {
+    background-color: white;
+    text-align: center;
+}
+.logo{
+    width: 50%;
+    height: auto;
+    margin: 24px 0;
+    box-sizing: border-box;
+}
+
+ /* Barra de Busqueda */
+
+.fa-magnifying-glass {
+    background-color: transparent;
+    padding: 2px;
+}
+
+.flex-logo-search {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 0 auto;
+}
+
+.clase-centrar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.clase-centrar i {
+    margin-right: 7px;
+}
+
+input {
+    width:100%;
+    background-color: transparent;
+    border: none;
+}
+ .input-buscador {
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    background-color: white;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 4px;
+    width: 30%;
+
+}
+
+.flex-logo-search .clase-centrar {
+    display: none;
+}
+
+.flex-logo-search a {
+    margin: auto;
+    width: 450px;
+}
+/* MENU MENU MENU MENU MENU*/
+
+.listas {
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.listas li {
+    margin: 0 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* MENU HAMBURG  MENU HAMBURG  MENU HAMBURG  MENU HAMBURG */
+
+.ordenar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {  
+    background-color: #1259c3;
+    padding: 16px;
+    margin: 24px;
+    border-radius: 8px;
+}
+
+.fa-bars {
+    color: white;
+}
+/* LOGO BANNER  LOGO BANNER */
+.clase-banner{
+    width: 100%;
+}
+ /* MAIN MAIN MAIN MAIN MAIN*/
+ .clase-titulos {
+    color: #666;
+    font-size: 24px;
+}
+ /* PRODUCTOS */
+.clase-producto {
+    width: 100%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.clase-producto img {
+    width: 100%;
+}
+
+ .precios {
+    font-size: 18px;
+    width:fit-content;
+}
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin-left: 10px;
+    width: 80%;
+
+    
+}
+.descripcion{
+    visibility: hidden;
+    font-size: 16px;
+    color: #666;
+}
+
+.clase-alinecuentos {
+    display: flex;
+    align-items: center;
+}
+
+.clase-separacion {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.clase-camiones {
+    color: #39b54a;
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #39b54a;
+    margin-top: 12px;
+}
+
+
+
+ /* Animando camión */
+@keyframes rotarClase-camiones {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-90deg);
+    }
+}
+
+.clase-producto:hover .clase-camiones {
+    animation: rotarClase-camiones 1s linear;
+    transform: rotate(-90deg) 
+}
+
+@keyframes origenClase-camiones {
+    from {
+        transform: rotate(-90deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.clase-producto:not(:hover) .clase-camiones {
+    animation: origenClase-camiones 1s linear ;
+}
+
+/* */
+
+.clase-alineacion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 4%;
+    margin-top: -50px;
+}
+
+
+.clase-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* REGISTER */
+.clase-register {
+    margin: 16px auto 16px auto;
+    width: 70%;
+    padding:8px 8px 24px 8px;
+    background-color: white;
+}
+form {
+    width: 70%;
+    margin: 0 auto;
+    
+}
+.titulo-registro-login {
+    color: #666;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-top: 8px;
+}
+
+form label {
+    line-height: 20px;
+    font-size: 14px;
+}
+form p {
+    margin-top: 24px;
+    font-size: 16px;
+}
+
+form input::placeholder {
+    color: #666;
+}
+form input:focus {
+    outline: none ;
+    border: 1px solid #1259c3;
+    box-shadow: #a1a1a1 2.4px 2.4px 3.2px;
+}
+
+form input[type="text"]:not(:placeholder-shown), input[type="password"]:not(:placeholder-shown) {
+    border: 1px solid #39b54a;
+}
+form input[type="radio"], input[type="checkbox"], input[type="file"] { 
+    margin-top: 5px;
+    width: fit-content;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* CODIGO LOGIN*/
+
+.input-login {
+    background-color: white;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.clase-loguear {
+    margin: 16px auto 16px auto;
+    width: 70%;
+    padding:8px 8px 24px 8px;
+}
+
+/* CODIGO FOOTER */
+
+footer{
+    padding: 24px;
+}
+.clase-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    margin-bottom: 16px;
+}
+
+footer p {
+    text-align: center;
+    width: 250px;
+    margin-top: 0px;
+    color:  #666;
+}
+
+footer i {
+    color: #1259c3;
+    padding-bottom: -10px;
+}
+
+footer h4 {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #666;
+}
+
+/* PRIMER MEDIA QUERY */
+@media (min-width:361px){
+
+    
+    @keyframes descripcionVisible {
+        from {
+            visibility: hidden;
+        }
+        to {
+            visibility: visible;
+        }
+    }
+    
+    
+    .clase-producto:hover .descripcion {
+        animation: descripcionVisible 10s linear;
+        
+    }
+}
+
+@media (min-width:769px){
+    .listas{
+        display: block;
+        display: flex;
+    }
+    .ordenar-menu {
+        display: none;
+    }
+
+/* Media query Sombra */
+
+@keyframes sombra {
+    from {
+        box-shadow: none;
+    }
+    to {
+        box-shadow: 0px 0px 10px #646464;
+    }
+}
+
+.clase-producto:hover{
+    animation: sombra 0.5s linear;
+    box-shadow: 0px 0px 10px #646464;
+}
+
+@keyframes sombraOut {
+    from {
+        box-shadow: 0px 0px 10px #646464;
+    }
+    to {
+        box-shadow: none;
+    }
+}
+
+.clase-producto:not(:hover) {
+    animation: sombraOut 0.5s linear;
+    box-shadow: none;
+}
+
+    .clase-producto{
+        width: 49% ;
+    }
+    .flex-logo-search .clase-centrar {
+        display: block;
+        display: flex;
+    }
+    .clase-centrar {
+        display: none;
+        flex-direction: row;
+    }
+    .input-buscador {
+        margin-right: 150px;
+    }
+
+    nav {
+        margin: 0 10% 0 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:1200px){
+    .clase-producto {
+        width: 24% ;
+    }
+    .animando-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+}
